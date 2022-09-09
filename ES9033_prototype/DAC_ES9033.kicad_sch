@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "ES9033 DAC prototype")
+    (date "2022-09-09")
+    (rev "0.1")
+    (company "Fabian Muehlberger ")
+  )
+
   (lib_symbols
     (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "C" (id 0) (at 0.254 1.778 0)
