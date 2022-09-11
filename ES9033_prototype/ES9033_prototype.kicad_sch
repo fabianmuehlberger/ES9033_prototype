@@ -118,11 +118,11 @@
         )
       )
     )
-    (symbol "Connector_Generic:Conn_02x04_Counter_Clockwise" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Connector_Generic:Conn_02x04_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 1.27 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_02x04_Counter_Clockwise" (id 1) (at 1.27 -7.62 0)
+      (property "Value" "Conn_02x04_Odd_Even" (id 1) (at 1.27 -7.62 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -134,13 +134,13 @@
       (property "ki_keywords" "connector" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0)
+      (property "ki_description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "Connector*:*_2x??_*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Conn_02x04_Counter_Clockwise_1_1"
+      (symbol "Conn_02x04_Odd_Even_1_1"
         (rectangle (start -1.27 -4.953) (end 0 -5.207)
           (stroke (width 0.1524) (type default) (color 0 0 0 0))
           (fill (type none))
@@ -181,19 +181,19 @@
           (name "Pin_1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 0 0) (length 3.81)
+        (pin passive line (at 7.62 2.54 180) (length 3.81)
           (name "Pin_2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+        (pin passive line (at -5.08 0 0) (length 3.81)
           (name "Pin_3" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+        (pin passive line (at 7.62 0 180) (length 3.81)
           (name "Pin_4" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 -5.08 180) (length 3.81)
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
           (name "Pin_5" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
         )
@@ -201,11 +201,11 @@
           (name "Pin_6" (effects (font (size 1.27 1.27))))
           (number "6" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 0 180) (length 3.81)
+        (pin passive line (at -5.08 -5.08 0) (length 3.81)
           (name "Pin_7" (effects (font (size 1.27 1.27))))
           (number "7" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 2.54 180) (length 3.81)
+        (pin passive line (at 7.62 -5.08 180) (length 3.81)
           (name "Pin_8" (effects (font (size 1.27 1.27))))
           (number "8" (effects (font (size 1.27 1.27))))
         )
@@ -539,7 +539,7 @@
   (symbol (lib_id "power:GND") (at 124.46 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00fdaa9b-d752-4c3a-818e-fa033bbf760b)
-    (property "Reference" "#PWR02" (id 0) (at 124.46 104.14 0)
+    (property "Reference" "#PWR0105" (id 0) (at 124.46 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 120.65 100.33 0))
@@ -620,7 +620,7 @@
   (symbol (lib_id "power:GND") (at 124.46 82.55 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 4e8ca946-9d9b-439e-bc95-c24b071db66f)
-    (property "Reference" "#PWR01" (id 0) (at 124.46 88.9 0)
+    (property "Reference" "#PWR0104" (id 0) (at 124.46 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 120.65 85.09 0))
@@ -678,11 +678,11 @@
     (pin "1" (uuid 20caac14-72a4-4cf4-8b4e-7abe8864523a))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_02x04_Counter_Clockwise") (at 132.08 76.2 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_02x04_Odd_Even") (at 132.08 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9b06b510-93d4-45d5-a04b-3b1b5bbebedf)
-    (property "Reference" "J1" (id 0) (at 130.81 67.31 0))
-    (property "Value" "Conn_02x04_Counter_Clockwise" (id 1) (at 130.81 69.85 0))
+    (property "Reference" "J102" (id 0) (at 130.81 67.31 0))
+    (property "Value" "conn_2x4_P2.52mm" (id 1) (at 130.81 69.85 0))
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" (id 2) (at 132.08 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -729,11 +729,11 @@
     (pin "1" (uuid e213eab9-a107-4b92-81dc-e116671d7222))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_02x04_Counter_Clockwise") (at 132.08 92.71 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_02x04_Odd_Even") (at 132.08 92.71 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d2f20dd3-27db-439d-8c83-bfefe885cc0f)
-    (property "Reference" "J2" (id 0) (at 130.81 87.63 0))
-    (property "Value" "Conn_02x04_Counter_Clockwise" (id 1) (at 129.54 102.87 0))
+    (property "Reference" "J103" (id 0) (at 130.81 87.63 0))
+    (property "Value" "conn_2x4_P2.52mm" (id 1) (at 129.54 102.87 0))
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" (id 2) (at 132.08 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -753,7 +753,7 @@
   (symbol (lib_id "power:GND") (at 266.7 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid decf0f3b-92e5-40fb-b7f9-88a667933c33)
-    (property "Reference" "#PWR0104" (id 0) (at 266.7 156.21 0)
+    (property "Reference" "#PWR0106" (id 0) (at 266.7 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 266.7 154.94 0))
@@ -866,12 +866,6 @@
     (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/99c295cb-4f0a-4792-9b81-6168f29ed8e0"
       (reference "#FLG0203") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/4e8ca946-9d9b-439e-bc95-c24b071db66f"
-      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00fdaa9b-d752-4c3a-818e-fa033bbf760b"
-      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
-    )
     (path "/0142f273-de18-401b-b08d-d89c05334fd3"
       (reference "#PWR0101") (unit 1) (value "+5V") (footprint "")
     )
@@ -881,8 +875,14 @@
     (path "/785dfbfb-98a4-44de-ae55-5b89b24656f2"
       (reference "#PWR0103") (unit 1) (value "+3V3") (footprint "")
     )
-    (path "/decf0f3b-92e5-40fb-b7f9-88a667933c33"
+    (path "/4e8ca946-9d9b-439e-bc95-c24b071db66f"
       (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00fdaa9b-d752-4c3a-818e-fa033bbf760b"
+      (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/decf0f3b-92e5-40fb-b7f9-88a667933c33"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
     )
     (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/2aa20c33-c182-4bb0-a5d2-9e34378be50a"
       (reference "#PWR0201") (unit 1) (value "+3.3V") (footprint "")
@@ -1028,38 +1028,41 @@
     (path "/291df5c7-0b4a-4063-b00f-9f93cc120a9c"
       (reference "H104") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad")
     )
-    (path "/9b06b510-93d4-45d5-a04b-3b1b5bbebedf"
-      (reference "J1") (unit 1) (value "Conn_02x04_Counter_Clockwise") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical")
-    )
-    (path "/d2f20dd3-27db-439d-8c83-bfefe885cc0f"
-      (reference "J2") (unit 1) (value "Conn_02x04_Counter_Clockwise") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical")
-    )
-    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/9023a2fa-8091-414c-b234-f3c004b16169"
-      (reference "J3") (unit 1) (value "Conn_02x02_Counter_Clockwise") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical")
-    )
     (path "/90fd9dde-74d2-4938-a42f-3dbde0fa6171"
       (reference "J101") (unit 1) (value "Conn_01x02") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/9b06b510-93d4-45d5-a04b-3b1b5bbebedf"
+      (reference "J102") (unit 1) (value "conn_2x4_P2.52mm") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical")
+    )
+    (path "/d2f20dd3-27db-439d-8c83-bfefe885cc0f"
+      (reference "J103") (unit 1) (value "conn_2x4_P2.52mm") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical")
     )
     (path "/3cbca4d3-def2-408b-a89a-fad302128d48"
       (reference "J104") (unit 1) (value "Conn_01x04") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/263d11db-7063-4f55-a5e5-b3058ad42a2f"
+      (reference "JP201") (unit 1) (value "jumper_open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm")
+    )
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/ca5ee9d0-9e20-424c-8b8e-42bc4002f3d1"
+      (reference "JP202") (unit 1) (value "jumper_open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm")
+    )
     (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/5d1658d0-462b-4308-8122-710b273e4bd3"
-      (reference "JP201") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
-    )
-    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/437e341d-03bd-4037-ae2b-bfebb3748d78"
-      (reference "JP202") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
-    )
-    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/ef7517e1-5f05-4862-9e7c-f7ea3d1037d4"
       (reference "JP203") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
-    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/8059282c-3882-49dd-a324-4ffc155fe971"
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/437e341d-03bd-4037-ae2b-bfebb3748d78"
       (reference "JP204") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
-    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/b485620c-a93b-438f-afed-b8f69c641b18"
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/ef7517e1-5f05-4862-9e7c-f7ea3d1037d4"
       (reference "JP205") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
-    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/ab747232-8d32-47a7-ac58-ee6e2a9656da"
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/8059282c-3882-49dd-a324-4ffc155fe971"
       (reference "JP206") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    )
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/b485620c-a93b-438f-afed-b8f69c641b18"
+      (reference "JP207") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    )
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/ab747232-8d32-47a7-ac58-ee6e2a9656da"
+      (reference "JP208") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
     (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/9544d287-8d81-40ca-9728-db87c3ea99a3"
       (reference "NT201") (unit 1) (value "NetTie_2") (footprint "NetTie:NetTie-2_SMD_Pad0.5mm")
