@@ -770,10 +770,10 @@
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid 8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3)
-    (property "Sheet name" "LDO_LT3042_3v3" (id 0) (at 69.85 71.6784 0)
+    (property "Sheet name" "POWER" (id 0) (at 69.85 71.6784 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "LDO_LT3042_3v3.kicad_sch" (id 1) (at 66.04 85.09 0)
+    (property "Sheet file" "POWER.kicad_sch" (id 1) (at 69.85 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "VIN" input (at 69.85 78.74 180)
@@ -962,17 +962,26 @@
     (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/05e4c5ed-57f2-422b-91fb-13441081b192"
       (reference "#PWR0226") (unit 1) (value "GND") (footprint "")
     )
-    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/772a847f-610a-4c87-9f2b-f302f6ae022e"
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/84e531e8-da58-41a8-8285-9fa0a2b754f1"
+      (reference "#PWR0227") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/17bbd268-962f-4d8d-81cf-0c9910eeffaa"
+      (reference "#PWR0228") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/70d3766c-4eed-40d9-b130-8967ce28c62c"
       (reference "#PWR0301") (unit 1) (value "GND") (footprint "")
     )
-    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/2971011f-0746-4149-9d9f-615fe2abdb85"
+    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/772a847f-610a-4c87-9f2b-f302f6ae022e"
       (reference "#PWR0302") (unit 1) (value "GND") (footprint "")
     )
-    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/84b3b00b-ca77-434e-b060-8d145efbe474"
+    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/2971011f-0746-4149-9d9f-615fe2abdb85"
       (reference "#PWR0303") (unit 1) (value "GND") (footprint "")
     )
-    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/394b6daa-c3cf-4ac5-a7b2-f964820f1786"
+    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/84b3b00b-ca77-434e-b060-8d145efbe474"
       (reference "#PWR0304") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/394b6daa-c3cf-4ac5-a7b2-f964820f1786"
+      (reference "#PWR0305") (unit 1) (value "GND") (footprint "")
     )
     (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/7ad81233-f4ae-4fbe-9202-46d4ad2f0fd1"
       (reference "C201") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -1103,11 +1112,17 @@
     (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/b2b8b2a4-9200-4b61-895e-06ed2dc8b6a5"
       (reference "R303") (unit 1) (value "49k9") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
+    (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/7552ab7c-4818-475e-a0d1-67aef51ba6e0"
+      (reference "SW201") (unit 1) (value "SW_SP3T") (footprint "Button_Switch_SMD:SW_SP3T_PCM13")
+    )
     (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/30b0f246-580b-438c-80cf-ac0ec9c741ed"
       (reference "U201") (unit 1) (value "ES9033") (footprint "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm")
     )
+    (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/23e9e319-e3dd-4183-9eee-45b66d9a3c55"
+      (reference "U301") (unit 1) (value "TVS1400DRV") (footprint "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm")
+    )
     (path "/8f0e9a9d-7880-4661-a6fc-61fb7d9afaf3/71175413-a6e1-48ab-8790-8ad587722484"
-      (reference "U301") (unit 1) (value "LT3042") (footprint "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm")
+      (reference "U302") (unit 1) (value "LT3042") (footprint "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm")
     )
     (path "/c8046807-9378-4c94-8ff5-7d9c7828f19d/c3feb132-8988-4ed5-b90c-09c875585849"
       (reference "X201") (unit 1) (value "ECS-2520MV-xxx-xx") (footprint "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm")
